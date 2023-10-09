@@ -7,7 +7,7 @@
     
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg,#131420,#130F40,#000000) ;
+    background: linear-gradient(45deg,#0047ab,#003366,#000000) ;
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
     display: flex;
@@ -25,6 +25,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 25px 45px #7374754b;
+    backdrop-filter: blur(10px);
+    z-index: 3;
 }
 .title{
     font-size: 30px;
@@ -98,9 +101,11 @@
     height: 300px;
     margin-top: 90px;
     margin-bottom: 30px;
-    background-color: #5b5a5abb;
+    background-color: rgba(255,255,255,.1);
     display: flex;
     flex-direction: column;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
 }
 h2{
     font-size: 5em;
@@ -140,7 +145,16 @@ h4{
     from {width:0}
 }
 
+input{
+  width: 150px;
+  height: 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 5px;
+  outline: none;
 
+}
 .logo-gallary{
     display: grid;
     grid-template-columns: auto ;
@@ -154,15 +168,23 @@ h4{
     background-color: #fcfbfb;
 }
 
-button{
+.create{
     border: none;
     display: flex;
-    width: 220px;
-    height: 60px;
+    width: 70px;
+    height: 30px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 20px;
+    margin: 5px;
+}
+.profile{
+  margin: 5px;
+  padding: 10px;
+}
+a{
+  color: #000000;
+  text-decoration: none;
 }
 .right-nav{
     display: flex;
