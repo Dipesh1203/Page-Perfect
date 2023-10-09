@@ -385,145 +385,6 @@ to{
 
 
 
-/* stack */
-.stackoverflow{
-    height:400px;
-    width:900px;
-     display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .wrapper{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    animation: wrapper 2s 1;
-    animation-delay: 18.5s;
-    
-  }
-  .stacks{
-    height:20px;
-    width:200px;
-    background:#f58025;
-    margin:6px;
-    
-  }
-  .s4{
-      transform:rotate(10deg);
-    transform-origin:200px 20px;
-    animation: s4 1.8s ease-in-out 18.5s reverse;
-  
-  }
-  .s3{
-      transform:rotate(21deg);
-    transform-origin:200px 30px;
-    animation: s3 1.8s ease-in-out 18.5s reverse;
-  }
-  .s2{
-      transform:rotate(33deg);
-    transform-origin:200px 45px;
-    animation: s2 1.8s ease-in-out 18.5s reverse;
-  }
-  
-  .s1{
-      transform:rotate(48deg);
-    transform-origin:200px 60px;
-    animation: s1 1.8s ease-in-out 18.5s reverse;
-  }
-  .container1{
-    height:80px;
-    width:250px;
-    border:10px solid #a3a3a3;
-    border-top:none;
-    margin-top:-60px;
-    animation: container 2;
-  }
-  
-  .text{
-    font-weight:200;
-    margin:auto;
-    color:white;
-    font-size:70px;
-    font-family: 'Libre Franklin', sans-serif;
-  }
-  .bold{
-    font-weight:900;
-    margin:auto;
-    color:white;
-    font-size:70px;
-    font-family: 'Libre Franklin', sans-serif;
-  }
-  
-  @keyframes s1 {
-      from{
-          transform:rotate(48deg);
-    transform-origin:200px 60px;
-      }
-  
-      to{
-          transform:rotate(0deg) translateY(104px);
-          transform-origin:200px 60px; 
-          
-      }
-  }
-  @keyframes s2 {
-      from{
-          transform:rotate(33deg);
-    transform-origin:200px 45px;
-      }
-  
-      to{
-          transform:rotate(0deg) translateY(78px);
-    transform-origin:200px 45px;
-      }
-  }
-  
-  @keyframes s3 {
-      from{
-          transform:rotate(21deg);
-          transform-origin:200px 30px;
-      }
-  
-      to{
-          transform:rotate(0deg) translateY(52px);
-          transform-origin:200px 60px; 
-      }
-  }
-  @keyframes s4 {
-      from{
-          transform:rotate(10deg);
-    transform-origin:200px 20px;
-       
-      }
-  
-      to{
-          transform:rotate(0deg);
-          transform-origin:200px 60px; 
-      }
-  }
-  
-  
-  @keyframes wrapper{
-      0%   { transform: rotate(0deg); }
-      30%   { transform: rotate(0deg); }
-      
-      83%   { transform: rotate(360deg); }
-      100%   { transform: rotate(360deg); }
-  }
-  
-  
-  @keyframes container1{
-      0%   { width:400px; }
-      30%   { width:400px; }
-      
-      83%   { width:400px; }
-      100%   { width:400px; }
-  }
-
-
-
-
 
   /* instagram */
 
@@ -595,5 +456,217 @@ span {
     100% {
       opacity: 1;
       filter: blur(0);
+    }
+  }
+
+
+
+
+/* stack */
+.stackoverflow{
+  height:400px;
+  width:900px;
+   display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  animation: wrapper 2s 1;
+  animation-delay: 18.5s;
+  
+}
+.stacks{
+  height:20px;
+  width:200px;
+  background:#f58025;
+  margin:6px;
+  
+}
+.s4{
+    transform:rotate(10deg);
+  transform-origin:200px 20px;
+  animation: s4 1.8s ease-in-out 18.5s reverse;
+
+}
+.s3{
+    transform:rotate(21deg);
+  transform-origin:200px 30px;
+  animation: s3 1.8s ease-in-out 18.5s reverse;
+}
+.s2{
+    transform:rotate(33deg);
+  transform-origin:200px 45px;
+  animation: s2 1.8s ease-in-out 18.5s reverse;
+}
+
+.s1{
+    transform:rotate(48deg);
+  transform-origin:200px 60px;
+  animation: s1 1.8s ease-in-out 18.5s reverse;
+}
+.container1{
+  height:80px;
+  width:250px;
+  border:10px solid #a3a3a3;
+  border-top:none;
+  margin-top:-60px;
+  animation: container 2;
+}
+
+.text{
+  font-weight:200;
+  margin:auto;
+  color:white;
+  font-size:70px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.bold{
+  font-weight:900;
+  margin:auto;
+  color:white;
+  font-size:70px;
+  font-family: 'Libre Franklin', sans-serif;
+  z-index: 2;
+}
+
+@keyframes s1 {
+    from{
+        transform:rotate(48deg);
+  transform-origin:200px 60px;
+    }
+
+    to{
+        transform:rotate(0deg) translateY(104px);
+        transform-origin:200px 60px; 
+        
+    }
+}
+@keyframes s2 {
+    from{
+        transform:rotate(33deg);
+  transform-origin:200px 45px;
+    }
+
+    to{
+        transform:rotate(0deg) translateY(78px);
+  transform-origin:200px 45px;
+    }
+}
+
+@keyframes s3 {
+    from{
+        transform:rotate(21deg);
+        transform-origin:200px 30px;
+    }
+
+    to{
+        transform:rotate(0deg) translateY(52px);
+        transform-origin:200px 60px; 
+    }
+}
+@keyframes s4 {
+    from{
+        transform:rotate(10deg);
+  transform-origin:200px 20px;
+     
+    }
+
+    to{
+        transform:rotate(0deg);
+        transform-origin:200px 60px; 
+    }
+}
+
+
+@keyframes wrapper{
+    0%   { transform: rotate(0deg); }
+    30%   { transform: rotate(0deg); }
+    
+    83%   { transform: rotate(360deg); }
+    100%   { transform: rotate(360deg); }
+}
+
+
+@keyframes container1{
+    0%   { width:400px; }
+    30%   { width:400px; }
+    
+    83%   { width:400px; }
+    100%   { width:400px; }
+}
+
+
+
+
+
+
+
+  /* google */
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font: normal bold 6rem sans-serif;
+    white-space: nowrap;
+  }
+  
+  .letter {
+    display: inline-block;
+    transform: translate3d(0, 0, 0);
+    margin-top: 0.5em;
+    text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+    font: normal bold 6rem "Product-Sans", sans-serif;
+    animation: bounce 1.5s cubic-bezier(0.05, 0, 0.2, 1) 2;
+    
+    animation-iteration-count: infinite;
+  }
+  
+  .g {
+    color: #4285f4;
+    animation-delay: 0s;
+  }
+  
+  .o {
+    color: #ea4335;
+    animation-delay: 0.2s;
+  }
+  
+  .sec {
+    color: #fbbc05;
+    animation-delay: .4s;
+  }
+  
+  .next{
+    animation-delay: 0.6s;
+  }
+  
+  .l {
+    color: #34a853;
+    animation-delay: 0.8s;
+  }
+  
+  .e {
+    color: #ea4335;
+    animation-delay: 3s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translate3d(0, 0, 0);
+      text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
+    }
+    50% {
+      transform: translate3d(0, 1em, 0);
+      text-shadow: rgba(0, 0, 0, 0.4) 0 1em 0.35em;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      text-shadow: rgba(0, 0, 0, 0.4) 0 0 0.05em;
     }
   }
